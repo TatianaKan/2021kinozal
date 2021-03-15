@@ -1,0 +1,26 @@
+.header-logo {
+  text-align: center;
+  padding: 100px 0;
+
+  background-color: $color-dark;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    color: $color-accent;
+    font-size: 3.5rem;
+    display: block;
+    font-family: $font-header;
+    letter-spacing: 0.33em;
+    margin-right: -0.2777em;
+    @extend %text-shadow;
+  }
+  &__description {
+    color: $color-light;
+    display: block;
+    letter-spacing: 0.2em;
+    font-size: 1.15rem;
+    @extend %text-shadow;
+  }
+}

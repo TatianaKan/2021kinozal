@@ -1,0 +1,38 @@
+.header-logo__title, .header-logo__description {
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+}
+
+html {
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.header-logo {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #232323;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-logo__title {
+  color: #df8a13;
+  font-size: 3.5rem;
+  display: block;
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.33em;
+  margin-right: -0.2777em;
+}
+
+.header-logo__description {
+  color: #ffffff;
+  display: block;
+  letter-spacing: 0.2em;
+  font-size: 1.15rem;
+}
