@@ -44,18 +44,23 @@ $image-size-with-padding: $image-size+10;
 
   position: relative;
   clear: both;
-  min-height: $image-size-with-padding;
-  margin-bottom: 15px;
-
-  &::after {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-    height: 1px;
-    width: calc(100% - #{$image-size-with-padding});
-    content: "";
-    background-color: $color-gray;
+  
+  &:not(:last-of-type) {
+    
+    min-height: $image-size-with-padding;
+    margin-bottom: 15px;
+    
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+      height: 1px;
+      width: calc(100% - #{$image-size-with-padding});
+      content: "";
+      background-color: $color-gray;
+    }
   }
+
 
 &:hover {
   a {
