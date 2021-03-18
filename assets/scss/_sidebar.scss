@@ -38,6 +38,25 @@
 
 
 .site-news-item {
+$image-size:75px;
+$image-size-with-padding: $image-size+10;
+
+
+  position: relative;
+  clear: both;
+  min-height: $image-size-with-padding;
+  margin-bottom: 15px;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    height: 1px;
+    width: calc(100% - #{$image-size-with-padding});
+    content: "";
+    background-color: $color-gray;
+  }
+
 &:hover {
   a {
     color: $color-accent;
@@ -52,7 +71,7 @@ border-color: $color-accent;
 
 &__img {
 float: left;
-width: 75px;
+width: $image-size;
 margin: 0 10px 10px 0;
 }
 
@@ -60,6 +79,7 @@ margin: 0 10px 10px 0;
 margin-bottom: $gap / 3 * 2;
 a {
   transition: color 0.25s;
+  @include block-shortener(1rem, 1.5,  50px, 2)
 }
 }
 
