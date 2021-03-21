@@ -116,8 +116,24 @@ a:hover, a:focus {
   margin-bottom: 15px;
 }
 
+.new-films-item__title {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .new-films-item-thumbnail {
   margin-bottom: 0;
+}
+
+.new-films__title {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 45px;
 }
 
 .left-sidebar .panel:last-of-type {

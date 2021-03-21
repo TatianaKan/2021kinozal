@@ -19,9 +19,25 @@
         padding-left: $gap / 2; 
         margin-bottom: $gap;
 
+        &__title {
+            font-size: $font-size;
+            font-family: $font-main;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
         &-thumbnail {
             margin-bottom: 0;
         }
+}
+&__title {
+    font-family: $font-header;
+    font-size: 3rem;
+
+    margin-top: 0;
+    margin-bottom: $gap*3;
 }
 
 }
