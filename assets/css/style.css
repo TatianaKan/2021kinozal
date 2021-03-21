@@ -65,6 +65,11 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 a {
   color: #165690;
 }
@@ -72,6 +77,14 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   color: #df8a13;
+}
+
+h1::after {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  content: "";
+  border-bottom: 3px solid #df8a13;
 }
 
 .header-logo {
@@ -111,9 +124,18 @@ a:hover, a:focus {
 }
 
 .new-films-item {
+  -webkit-transition: color 5s;
+  -o-transition: color 5s;
+  transition: color 5s;
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
+}
+
+.new-films-item :hover,
+.new-films-item :focus {
+  color: white;
+  background-color: #df8a13;
 }
 
 .new-films-item__title {
