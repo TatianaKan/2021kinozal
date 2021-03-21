@@ -21,12 +21,13 @@ a {
     }
 }
 
-h1 {
+h1, h2 {
+    
     &::after {
          position: absolute;
          width: 100%;
-         top: $gap*2;
-         // bottom: 100px;
+         top: $gap * 2;
+         margin-left: $gap;
          content: "";
          border-bottom: 3px solid $color-accent;
      }

@@ -79,10 +79,11 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
-h1::after {
+h1::after, h2::after {
   position: absolute;
   width: 100%;
   top: 30px;
+  margin-left: 15px;
   content: "";
   border-bottom: 3px solid #df8a13;
 }
@@ -117,28 +118,30 @@ h1::after {
   margin-bottom: 60px;
 }
 
-.new-films-row {
+.new-films-row,
+.top-week-row {
   margin-right: -7.5px;
   margin-left: -7.5px;
   margin-bottom: -15px;
 }
 
-.new-films-item {
-  -webkit-transition: color 5s;
-  -o-transition: color 5s;
-  transition: color 5s;
+.new-films-item,
+.top-week-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
 }
 
 .new-films-item :hover,
-.new-films-item :focus {
+.new-films-item :focus,
+.top-week-item :hover,
+.top-week-item :focus {
   color: white;
   background-color: #df8a13;
 }
 
-.new-films-item__title {
+.new-films-item__title,
+.top-week-item__title {
   font-size: 16px;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
@@ -147,15 +150,26 @@ h1::after {
   margin-bottom: 0;
 }
 
-.new-films-item-thumbnail {
+.new-films-item-thumbnail,
+.top-week-item-thumbnail {
   margin-bottom: 0;
 }
 
-.new-films__title {
+.new-films__title,
+.top-week__title {
   font-family: "PT Serif", serif;
   font-size: 3rem;
   margin-top: 0;
   margin-bottom: 45px;
+}
+
+.top-week {
+  margin-top: 45px;
+}
+
+.top-week__title {
+  font-size: 2.5rem;
+  padding-left: 45px;
 }
 
 .left-sidebar .panel:last-of-type {
