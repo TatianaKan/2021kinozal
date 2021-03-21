@@ -9,7 +9,8 @@
   }
 }
 .new-films,
-.top-week {
+.top-week,
+.new-cinema {
   &-row {
     margin-right: -$gap / 2;
     margin-left: -$gap / 2;
@@ -17,7 +18,6 @@
   }
 
   &-item {
-  
     padding-right: $gap / 2;
     padding-left: $gap / 2;
     margin-bottom: $gap;
@@ -50,17 +50,31 @@
   }
 }
 
-.top-week {
-
-    margin-top: $gap * 3;
-    &__title {
-        font-size: 2.5rem;
-        padding-left: $gap*3;
-    }
+.top-week,
+.new-cinema {
+  margin-top: $gap * 3;
+  
+&-item {
+  margin-bottom: 0;
 }
 
+  &__title {
+    font-size: 2.5rem;
+    padding-left: $gap * 3;
+  }
+}
 
+.new-cinema {
+  &-item {
+    &__img {
+      float: left;
+      width: 263px;
+    }
 
-
-
-
+    &__title {
+      font-size: 1.5rem;
+      font-weight: normal;
+      
+    }
+  }
+}

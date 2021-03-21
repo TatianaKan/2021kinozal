@@ -119,14 +119,16 @@ h1::after, h2::after {
 }
 
 .new-films-row,
-.top-week-row {
+.top-week-row,
+.new-cinema-row {
   margin-right: -7.5px;
   margin-left: -7.5px;
   margin-bottom: -15px;
 }
 
 .new-films-item,
-.top-week-item {
+.top-week-item,
+.new-cinema-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
@@ -135,13 +137,16 @@ h1::after, h2::after {
 .new-films-item :hover,
 .new-films-item :focus,
 .top-week-item :hover,
-.top-week-item :focus {
+.top-week-item :focus,
+.new-cinema-item :hover,
+.new-cinema-item :focus {
   color: white;
   background-color: #df8a13;
 }
 
 .new-films-item__title,
-.top-week-item__title {
+.top-week-item__title,
+.new-cinema-item__title {
   font-size: 16px;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
@@ -151,25 +156,44 @@ h1::after, h2::after {
 }
 
 .new-films-item-thumbnail,
-.top-week-item-thumbnail {
+.top-week-item-thumbnail,
+.new-cinema-item-thumbnail {
   margin-bottom: 0;
 }
 
 .new-films__title,
-.top-week__title {
+.top-week__title,
+.new-cinema__title {
   font-family: "PT Serif", serif;
   font-size: 3rem;
   margin-top: 0;
   margin-bottom: 45px;
 }
 
-.top-week {
+.top-week,
+.new-cinema {
   margin-top: 45px;
 }
 
-.top-week__title {
+.top-week-item,
+.new-cinema-item {
+  margin-bottom: 0;
+}
+
+.top-week__title,
+.new-cinema__title {
   font-size: 2.5rem;
   padding-left: 45px;
+}
+
+.new-cinema-item__img {
+  float: left;
+  width: 263px;
+}
+
+.new-cinema-item__title {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .left-sidebar .panel:last-of-type {
