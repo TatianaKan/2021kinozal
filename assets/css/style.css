@@ -3,7 +3,7 @@
 }
 
 .header, .main, .left-sidebar {
-  margin-bottom: 79.99995px;
+  margin-bottom: 79.99999px;
 }
 
 .navbar-inverse {
@@ -82,7 +82,7 @@ a:hover, a:focus {
 h1::after, h2::after {
   position: absolute;
   width: 100%;
-  top: 30px;
+  top: 34px;
   margin-left: 15px;
   content: "";
   border-bottom: 3px solid #df8a13;
@@ -166,7 +166,7 @@ h1::after, h2::after {
 .new-cinema__title {
   font-family: "PT Serif", serif;
   font-size: 3rem;
-  margin-top: 0;
+  margin-top: -7.5px;
   margin-bottom: 45px;
 }
 
@@ -177,23 +177,42 @@ h1::after, h2::after {
 
 .top-week-item,
 .new-cinema-item {
-  margin-bottom: 0;
+  margin-bottom: -5px;
 }
 
 .top-week__title,
 .new-cinema__title {
   font-size: 2.5rem;
   padding-left: 45px;
+  margin-top: 0;
 }
 
 .new-cinema-item__img {
   float: left;
   width: 263px;
+  margin: 1px 28px 0px -6px;
 }
 
 .new-cinema-item__title {
   font-size: 1.5rem;
   font-weight: normal;
+  text-align: left;
+  margin-left: -6px;
+  color: #165690;
+}
+
+.new-cinema-item__content {
+  text-align: justify;
+}
+
+.new-cinema-item__btn {
+  float: right;
+  background-color: #EFAD4D;
+  margin-top: 7.5px;
+}
+
+.new-cinema-item__btn a {
+  color: white;
 }
 
 .left-sidebar .panel:last-of-type {
