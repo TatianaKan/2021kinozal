@@ -230,6 +230,10 @@ h1::after, h2::after {
   color: white;
 }
 
+.page-description__panel {
+  padding: 20px 15px;
+}
+
 .left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }
@@ -433,5 +437,8 @@ h1::after, h2::after {
   .header-logo__title {
     letter-spacing: 0.2em;
     font-size: 2.5rem;
+  }
+  .footer-top {
+    padding-left: 15px;
   }
 }

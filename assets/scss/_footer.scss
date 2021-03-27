@@ -18,6 +18,11 @@ a {
     }
 }
 
+&-top {
+    @include xs {
+        padding-left: $gap;
+    }
+}
 
 &-bottom {
     margin: 10px 0;
