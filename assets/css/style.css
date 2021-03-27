@@ -58,6 +58,7 @@
 html {
   font-size: 16px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -119,16 +120,14 @@ h1::after, h2::after {
 }
 
 .new-films-row,
-.top-week-row,
-.new-cinema-row {
+.top-week-row {
   margin-right: -7.5px;
   margin-left: -7.5px;
   margin-bottom: -15px;
 }
 
 .new-films-item,
-.top-week-item,
-.new-cinema-item {
+.top-week-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
@@ -137,16 +136,13 @@ h1::after, h2::after {
 .new-films-item :hover,
 .new-films-item :focus,
 .top-week-item :hover,
-.top-week-item :focus,
-.new-cinema-item :hover,
-.new-cinema-item :focus {
+.top-week-item :focus {
   color: white;
   background-color: #df8a13;
 }
 
 .new-films-item__title,
-.top-week-item__title,
-.new-cinema-item__title {
+.top-week-item__title {
   font-size: 16px;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
@@ -156,14 +152,12 @@ h1::after, h2::after {
 }
 
 .new-films-item-thumbnail,
-.top-week-item-thumbnail,
-.new-cinema-item-thumbnail {
+.top-week-item-thumbnail {
   margin-bottom: 0;
 }
 
 .new-films__title,
-.top-week__title,
-.new-cinema__title {
+.top-week__title {
   font-family: "PT Serif", serif;
   font-size: 3rem;
   margin-top: -7.5px;
@@ -183,32 +177,47 @@ h1::after, h2::after {
 .top-week__title,
 .new-cinema__title {
   font-size: 2.5rem;
+  font-family: "PT Serif", serif;
   padding-left: 45px;
   margin-top: 0;
 }
 
+.new-cinema-item {
+  padding-top: 15px;
+}
+
+.new-cinema-item:hover h3 > a {
+  color: #df8a13;
+}
+
+.new-cinema-item:hover .thumbnail, .new-cinema-item:hover .btn-warning {
+  background-color: #df8a13;
+}
+
+.new-cinema-item-thumbnail {
+  margin-bottom: 15px;
+}
+
 .new-cinema-item__img {
   float: left;
-  width: 263px;
-  margin: 1px 28px 0px -6px;
+  width: 100%;
 }
 
 .new-cinema-item__title {
   font-size: 1.5rem;
   font-weight: normal;
   text-align: left;
-  margin-left: -6px;
   color: #165690;
 }
 
 .new-cinema-item__content {
+  letter-spacing: 0.01em;
   text-align: justify;
 }
 
 .new-cinema-item__btn {
   float: right;
-  background-color: #EFAD4D;
-  margin-top: 7.5px;
+  background-color: #f0ad4e;
 }
 
 .new-cinema-item__btn a {
@@ -352,6 +361,34 @@ h1::after, h2::after {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer {
+  padding-top: 45px;
+  color: white;
+  background-color: #222222;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: #77776A;
+}
+
+.footer a:hover, .footer a:focus {
+  color: white;
+}
+
+.footer-bottom {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: white;
 }
 
 @media (min-width: 576px) {

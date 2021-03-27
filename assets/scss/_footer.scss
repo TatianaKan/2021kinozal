@@ -1,0 +1,29 @@
+.footer {
+ padding-top: $gap * 3;   
+color: white;
+background-color:   #222222;
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #77776A;
+
+    &:hover,
+    &:focus {
+        color: white;
+    }
+}
+
+&-bottom {
+    margin: 20px 0;
+    text-align: center;
+
+    a {
+        color: white;
+    }
+}
+
+}
