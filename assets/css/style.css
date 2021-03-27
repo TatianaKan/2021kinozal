@@ -193,6 +193,10 @@ h1::after, h2::after {
   padding-top: 15px;
 }
 
+.new-cinema-item__img {
+  width: 100%;
+}
+
 .new-cinema-item:hover h3 > a {
   color: #df8a13;
 }
@@ -201,20 +205,14 @@ h1::after, h2::after {
   background-color: #df8a13;
 }
 
-.new-cinema-item-thumbnail {
+.new-cinema-item .thumbnail {
   margin-bottom: 0;
-}
-
-.new-cinema-item__img {
-  float: left;
-  width: 100%;
 }
 
 .new-cinema-item__title {
   font-size: 1.5rem;
   font-weight: normal;
   text-align: left;
-  margin-top: 5px;
   color: #165690;
 }
 
@@ -225,7 +223,7 @@ h1::after, h2::after {
 .new-cinema-item__btn {
   float: right;
   background-color: #f0ad4e;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .new-cinema-item__btn a {
@@ -372,6 +370,7 @@ h1::after, h2::after {
 }
 
 .footer {
+  margin-top: -15px;
   padding-top: 45px;
   color: white;
   background-color: #222222;
