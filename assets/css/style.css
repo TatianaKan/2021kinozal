@@ -402,7 +402,6 @@ h1::after, h2::after {
   .header-logo__title {
     letter-spacing: 0.33em;
     font-size: 3.5rem;
-    margin-right: -0.2777em;
   }
 }
 
