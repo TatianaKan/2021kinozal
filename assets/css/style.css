@@ -230,8 +230,62 @@ h1::after, h2::after {
   color: white;
 }
 
+.page-films__badge {
+  font-size: 16px;
+}
+
+.page-films__wrapper {
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+
+.page-films__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.page-films__info {
+  padding: 20px;
+}
+
+.page-description {
+  margin-top: 60px;
+}
+
 .page-description__panel {
   padding: 20px 15px;
+}
+
+.page-recall {
+  margin-top: 45px;
+}
+
+.page-recall__name {
+  font-size: 1.2rem;
+  padding: 2px 0 2px 0;
+}
+
+.page-recall__img {
+  float: left;
+  padding-right: 7.5px;
+}
+
+.page-recall__btn {
+  float: right;
+  padding: 10px 12px 8px 14px;
+  font-size: 1.2rem;
+}
+
+.page-otziv {
+  margin-top: 67px;
+}
+
+.form-group__recall {
+  margin-top: 45px;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
 }
 
 .left-sidebar .panel:last-of-type {
