@@ -1,37 +1,36 @@
 .footer {
-    margin-top: -$gap;
-padding-top: $gap * 3;   
-color: white;
-background-color:   #222222;
+  margin-top: -$gap;
+  padding-top: $gap * 3;
+  color: white;
+  background-color: #222222;
 
-ul {
+  ul {
     padding: 0;
     list-style: none;
-}
+  }
 
-a {
-    color: #77776A;
+  a {
+    color: #777777;
 
     &:hover,
     &:focus {
-        color: white;
+      color: white;
     }
-}
+  }
 
-&-top {
+  &-top {
     @include xs {
-        padding-left: $gap;
+      padding-right: $gap;
+      padding-left: $gap;
     }
-}
+  }
 
-&-bottom {
+  &-bottom {
     margin: 10px 0;
     text-align: center;
-    
 
     a {
-        color: white;
+      color: white;
     }
-}
-
+  }
 }

@@ -21,10 +21,20 @@
     padding-left: $gap / 2;
     margin-bottom: $gap;
 
-    :hover,
-    :focus {
-      color: white;
-      background-color: $color-accent;
+    // :hover,
+    // :focus {
+    //   color: white;
+    //   background-color: $color-accent;
+    // }
+
+    &:hover {
+      .thumbnail {
+        border-color: $color-accent;
+        background-color: $color-accent;
+      }
+      h3 {
+        color: white;
+      }
     }
 
     &__image {
@@ -43,17 +53,15 @@
       margin-top: 0;
       margin-bottom: 0;
     }
-    
+
     &__thumbnail {
       margin-bottom: 0;
       transition: background-color 0.25s;
     }
   }
   &__title {
-    
-
     font-family: $font-header;
-    font-size: 3rem;
+    // font-size: 3rem;
 
     margin-top: -$gap / 2;
     margin-bottom: $gap * 3;
@@ -64,47 +72,48 @@
 .new-cinema {
   margin-top: $gap * 3;
 
-
-
   &__title {
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
     font-family: $font-header;
-    padding-left: $gap * 3;
+    // padding-left: $gap * 3;
     margin-top: 0;
   }
 }
 
 .new-cinema {
   &-item {
-   padding-top: $gap ;
+    padding-top: $gap;
 
-&__img {
+    &__img {
       // float: left;
       width: 100%;
-      
     }
     &:hover {
-      h3> a {
+      h3 > a {
         color: $color-accent;
       }
-      .thumbnail, .btn-warning  {
-       background-color: $color-accent;
+      .thumbnail {
+        background-color: #f0ad4e;
+      }
+      .btn-warning {
+        background-color: $color-accent;
       }
     }
+    h3 > a {
+      transition: color 0.25s;
+    }
+
     .thumbnail {
       margin-bottom: 0;
-
-      
+      transition: background-color 0.25s;
     }
-    
 
     &__title {
       font-size: 1.5rem;
       font-weight: normal;
       text-align: left;
-    // margin-top: 5px;
+      // margin-top: 5px;
       color: $color-primary;
-      
     }
 
     &__content {
@@ -114,13 +123,11 @@
 
     &__btn {
       float: right;
-      background-color:#f0ad4e;;
+      // background-color: #f0ad4e;
       margin-bottom: $gap;
+      transition: background-color 0.25s;
 
-      a {
-        color: white;
-      }
-      
+      //
     }
   }
 }

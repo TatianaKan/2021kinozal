@@ -5,7 +5,7 @@
     margin-bottom: 0;
   }
 
-.vertical-slider {
+  .vertical-slider {
     border-radius: 4px;
     overflow: hidden;
     &__img {
@@ -36,20 +36,17 @@
   }
 }
 
-
 .site-news-item {
-$image-size:75px;
-$image-size-with-padding: $image-size+10;
-
+  $image-size: 75px;
+  $image-size-with-padding: $image-size + 10;
 
   position: relative;
   clear: both;
-  
+
   &:not(:last-of-type) {
-    
     min-height: $image-size-with-padding;
     margin-bottom: 15px;
-    
+
     &::after {
       position: absolute;
       right: 0;
@@ -61,90 +58,80 @@ $image-size-with-padding: $image-size+10;
     }
   }
 
-
-&:hover {
-  a {
-    color: $color-accent;
+  &:hover {
+    a {
+      color: $color-accent;
+    }
+    .site-news-item__img {
+      background-color: $color-accent;
+      border-color: $color-accent;
+    }
   }
-.site-news-item__img {
-  background-color:$color-accent;
-border-color: $color-accent;
-}
 
+  &__img {
+    float: left;
+    width: $image-size;
+    margin: 0 10px 10px 0;
+  }
 
-}
+  &__title {
+    margin-bottom: $gap / 3 * 2;
+    a {
+      transition: color 0.25s;
+      @include block-shortener(1rem, 1.5, 50px, 2);
+    }
+  }
 
-&__img {
-float: left;
-width: $image-size;
-margin: 0 10px 10px 0;
-}
-
-&__title {
-margin-bottom: $gap / 3 * 2;
-a {
-  transition: color 0.25s;
-  @include block-shortener(1rem, 1.5,  50px, 2)
-}
-}
-
-&__date {
-text-align: right;
-font-size: 0.8rem;
-color: darken($color-gray, 30%);
-}
-
+  &__date {
+    text-align: right;
+    font-size: 0.8rem;
+    color: darken($color-gray, 30%);
+  }
 }
 
 .top-films {
-
- 
-
-&__body {
-padding-right: 0;
-padding-left: 0;
-}
-&__list{
-
-margin-bottom: 0;
-}
-
-&__item {
-background-color: transparent;
-margin-right: -1px;
-margin-left: -1px;
-
-padding-right: 55px;
-
-color: $color-primary !important;
-
-&:first-child {
-  border-radius: 0;
-  border-top: none;
-}
-
-&:last-child {
-  border-radius: 0;
-  border-bottom: none;
-}
-&:hover,
-&:focus {
-  color: white !important;
-  background-color: $color-accent !important;
-  border-color: $color-accent;
-
-  .badge {
-    background-color: $color-dark;
+  &__body {
+    padding-right: 0;
+    padding-left: 0;
   }
-}
+  &__list {
+    margin-bottom: 0;
+  }
 
-}
+  &__item {
+    background-color: transparent;
+    margin-right: -1px;
+    margin-left: -1px;
 
-&__badge {
-position: absolute;
-top: 50%;
-right: $gap;
-transform: translateY(-50%);
- }
+    padding-right: 55px;
 
+    color: $color-primary !important;
+
+    &:first-child {
+      border-radius: 0;
+      border-top: none;
+    }
+
+    &:last-child {
+      border-radius: 0;
+      border-bottom: none;
+    }
+    &:hover,
+    &:focus {
+      color: white !important;
+      background-color: $color-accent !important;
+      border-color: $color-accent;
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 50%;
+    right: $gap;
+    transform: translateY(-50%);
+  }
 }

@@ -80,13 +80,25 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
+h1, h2 {
+  font-family: "PT Serif", serif;
+}
+
 h1::after, h2::after {
   position: absolute;
   width: 100%;
-  top: 34px;
-  margin-left: 15px;
+  margin: 0.85em 0 0 15px;
   content: "";
-  border-bottom: 3px solid #df8a13;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 .header-logo {
@@ -133,12 +145,15 @@ h1::after, h2::after {
   margin-bottom: 15px;
 }
 
-.new-films-item :hover,
-.new-films-item :focus,
-.top-week-item :hover,
-.top-week-item :focus {
-  color: white;
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail {
+  border-color: #df8a13;
   background-color: #df8a13;
+}
+
+.new-films-item:hover h3,
+.top-week-item:hover h3 {
+  color: white;
 }
 
 .new-films-item__image,
@@ -171,7 +186,6 @@ h1::after, h2::after {
 .new-films__title,
 .top-week__title {
   font-family: "PT Serif", serif;
-  font-size: 3rem;
   margin-top: -7.5px;
   margin-bottom: 45px;
 }
@@ -183,9 +197,7 @@ h1::after, h2::after {
 
 .top-week__title,
 .new-cinema__title {
-  font-size: 2.5rem;
   font-family: "PT Serif", serif;
-  padding-left: 45px;
   margin-top: 0;
 }
 
@@ -201,12 +213,25 @@ h1::after, h2::after {
   color: #df8a13;
 }
 
-.new-cinema-item:hover .thumbnail, .new-cinema-item:hover .btn-warning {
+.new-cinema-item:hover .thumbnail {
+  background-color: #f0ad4e;
+}
+
+.new-cinema-item:hover .btn-warning {
   background-color: #df8a13;
+}
+
+.new-cinema-item h3 > a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .new-cinema-item .thumbnail {
   margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 .new-cinema-item__title {
@@ -222,12 +247,10 @@ h1::after, h2::after {
 
 .new-cinema-item__btn {
   float: right;
-  background-color: #f0ad4e;
   margin-bottom: 15px;
-}
-
-.new-cinema-item__btn a {
-  color: white;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 .page-films__badge {
@@ -440,7 +463,7 @@ h1::after, h2::after {
 }
 
 .footer a {
-  color: #77776A;
+  color: #777777;
 }
 
 .footer a:hover, .footer a:focus {
@@ -457,6 +480,17 @@ h1::after, h2::after {
 }
 
 @media (min-width: 576px) {
+  h1 {
+    margin: 15px 0 45px;
+    font-size: 3rem;
+  }
+  h2 {
+    margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
   .header-logo__title {
     letter-spacing: 0.33em;
     font-size: 3.5rem;
@@ -488,11 +522,23 @@ h1::after, h2::after {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    margin: 0 0 30px;
+    font-size: 2rem;
+  }
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
   .header-logo__title {
     letter-spacing: 0.2em;
     font-size: 2.5rem;
   }
   .footer-top {
+    padding-right: 15px;
     padding-left: 15px;
   }
 }
